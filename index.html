@@ -14,33 +14,65 @@
 <body>
 
   <!-- Side Bar -->
-  <nav id="side-bar">
+  <aside>
     <div class="smartphone">
       <div class="side-header">
         <div class="logo-container">
-          <img src="./img/logo-small.svg" alt="Image not found">
+          <img class="cursor-pointer" src="./img/logo-small.svg" alt="Image not found">
         </div>
         <div class="icons-container">
-          <img class="active" src="./img/home.svg" alt="Image not found">
-          <img src="./img/search.svg" alt="Image not found">
-          <img src="./img/libreria.svg" alt="Image not found">
+          <img class="active cursor-pointer" src="./img/home.svg" alt="Image not found">
+          <img class="cursor-pointer" src="./img/search.svg" alt="Image not found">
+          <img class="cursor-pointer" src="./img/libreria.svg" alt="Image not found">
         </div>
       </div>
       <div class="side-footer">
-        <div class="icons-container">
-          <img src="./img/download.svg" alt="Image not found">
-          <img class="border-round" src="./img/profile.svg" alt="Image not found">
+        <div class="icons-container mb-5">
+          <i class="fa-regular fa-circle-down cursor-pointer fs-lg"></i>
+          <img class="border-round cursor-pointer bg-gray active height-sm" src="./img/profile.svg" alt="Image not found">
         </div>
       </div> 
     </div>
     <div class="tablet">
       <div class="side-header">
-        
+        <div class="logo-container">
+          <img src="./img/logo.svg" alt="Image not found">
+        </div>
+        <div class="flex flex-column row-gap-8">
+          <div class="icons-container">
+            <img class="invert-0" src="./img/home.svg" alt="Image not found">
+            <span class="fw-600 text-white">Home</span>
+          </div>
+          <div class="icons-container">
+            <img src="./img/search.svg" alt="Image not found">
+            <span>Search</span>
+          </div>
+          <div class="icons-container">
+            <img src="./img/libreria.svg" alt="Image not found">
+            <span>La tua libreria</span>
+          </div>
+        </div>
+        <div class="flex flex-column row-gap-8 mt-10">
+          <span class="text-white fs-md fw-700">Playlist</span>
+          <div class="icons-container">
+            <i class="fa-solid fa-square-plus fs-xl create-playlist"></i>
+            <span class="fs-md-1">Crea playlist</span>
+          </div>
+          <ul>
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
+          </ul>
+        </div>
       </div>
       <div class="side-footer">
       </div>
     </div>
-  </nav>
+  </aside>
 
   <!-- Main -->
   <main>

@@ -12,6 +12,9 @@
   /* Css responsive */
     .tablet{
       display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
     }
     
   /* Buttons */
@@ -22,28 +25,25 @@
     .big-btn{
       padding: 12px 30px;
     }
-  /* Images */
-    .invert-1{
-     filter: invert(1);
-    }
+
 /*<---->*/
 
 /* Side-bar */
-  #side-bar{
+ aside{
     background-color: black;
-    width: 40px; /*190px*/
+    width: 40px; 
     height: calc(100vh - 80px);
     position: fixed;
   } 
 
-  #side-bar .smartphone{
+ aside .smartphone{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
   }
 
-  #side-bar .smartphone img{
+ aside .smartphone img{
     width: 25px;
   }
 
@@ -67,7 +67,8 @@
     row-gap: 4px;
   }
 
-  .icons-container img{
+  .icons-container img,
+  .icons-container i{
     filter: invert(0.5);
   }
 
@@ -75,22 +76,9 @@
     filter: invert(0) !important;
   }
 
-  /*
-  .logo-container{
-    height: 80px;
-    display: flex;
-    align-items: center;
-    column-gap: 5px;
+  .download-icon{
+    width: 35px !important;
   }
-
-  .logo-container img{
-    width: 40px;
-  }
-
-  .logo-container span{
-    font-size: 25px;
-    font-weight: 500;
-  } */
 
 /* Main */
   main{
@@ -109,7 +97,7 @@
       width: inherit;
       position: fixed;
       background-color: rgba(9,11,18,0.5);
-      height: 80px;
+      height: 70px;
     }
 
     #top-bar button{
@@ -135,7 +123,7 @@ footer{
   /* Tablet */
   @media all and (min-width: 500px) {
     .smartphone{
-      display: none;
+      display: none !important;
     }
 
     .tablet{
@@ -144,21 +132,102 @@ footer{
     }
 
     /* Side Bar*/
-    .logo-container{
-      height: 80px;
+    aside{
+      width: 140px;
+    }
+
+    aside img{
+      width: 20px;
+    }
+
+    aside span{
+      font-size: 11px;
+    }
+
+    aside li,
+    aside span{
+      color: gray;
+    }
+
+    aside span:hover{
+      color: white;
+    }
+
+    /* side header*/
+    aside .side-header{
+      width: auto;
+      margin: 0;
+      margin-left: 20px;
+    }
+
+    aside .logo-container{
+      height: 70px;
       display: flex;
+      justify-content: flex-start;
       align-items: center;
       column-gap: 5px;
+      cursor: pointer;
     }
-  
-    .logo-container img{
-      width: 40px;
+     
+    aside .logo-container img{
+      width: 100px;
     }
-  
-    .logo-container span{
+    
+    aside .logo-container span{
       font-size: 25px;
       font-weight: 500;
     } 
+    
+    aside .icons-container{
+      cursor: pointer;
+      flex-direction: row;
+      column-gap: 5px;
+    }
+
+    aside .create-playlist:hover{
+      filter: invert(0);
+    }
+
+      @media all and (hover: hover) {
+          aside .icons-container:hover img{
+            filter: invert(0);
+          }
+
+          aside .icons-container:hover i{
+            filter: invert(0)
+          }
+          
+          aside .icons-container:hover span{
+            color: white;
+          }
+      }
+
+    aside ul{
+      height: calc(40vh - 80px);
+      overflow-y: auto;
+      line-height: 30px;
+    }
+
+    aside li{
+      cursor: pointer;
+      list-style-type: none;
+      font-size: 12px;
+    }
+
+    aside li:hover{
+      color: white;
+    }
+
+    /* side footer */
+    aside .download-icon img{
+      width: 100%;
+    }
+
+    /* Main */
+    main{
+      width: calc(100vw - 140px);
+      margin-left: 140px;
+    }
     
   }
 
@@ -182,6 +251,11 @@ footer{
   .flex{
     display: flex;
   }
+  
+  .flex-center{
+    align-items: center;
+    justify-content: center;
+  }
 
   .flex-align-center{
     align-items: center;
@@ -191,16 +265,83 @@ footer{
     justify-content: center;
   }
 
+  .flex-column{
+    flex-direction: column;
+  }
+
+  .row-gap-8{
+    row-gap: 8px;
+  }
+
+  /* Height */
+  .height-sm{
+    height: 25px;
+  }
+
   /* Margin */
+  .mt-10{
+    margin-top: 20px;
+  }
+
   .ml-5{
     margin-left: 5px;
   }
 
+  .mb-5{
+    margin-bottom: 5px;
+  }
+
   /* Text */
     /* Font */
+    .fs-md-1{
+      font-size: 13px;
+    }
+    
+    .fs-md{
+      font-size: 14px;
+    }
+    
+    .fs-lg{
+      font-size: 25px;
+    }
+
+    .fs-xl{
+      font-size: 35px;
+    }
+
+    .fw-600{
+      font-weight: 600;
+    }
+
+    .fw-700{
+      font-weight: 700;
+    }
+
+    /* color*/
+    .text-white{
+      color: white;
+    }
   
   /* Border */
     .border-round{
-      border-radius: 50%;
-      background-color: gray;
+      border-radius: 100%;
     }
+  
+  /* Filter */
+    .invert-1{
+      filter: invert(1) !important;
+    }
+
+    .invert-0{
+      filter: invert(0) !important;
+    }
+
+  /* Cursor */
+  .cursor-pointer{
+   cursor: pointer;
+  }
+
+  /* Background */
+  .bg-gray{
+    background-color: gray;
+  }
