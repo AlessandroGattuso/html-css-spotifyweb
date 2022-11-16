@@ -28,7 +28,7 @@
       </div>
       <div class="side-footer">
         <div class="icon-container mb-5">
-          <i class="fa-regular fa-circle-down cursor-pointer fs-lg"></i>
+          <img class="mr-3 cursor-pointer" src="./img/download.svg" alt="Image not found">
           <img class="border-round cursor-pointer bg-gray active size-sm" src="./img/profile.svg" alt="Image not found">
         </div>
       </div> 
@@ -52,7 +52,7 @@
             <span>La tua libreria</span>
           </div>
         </div>
-        <div class="flex flex-column row-gap-8 mt-10">
+        <div class="flex flex-column row-gap-8 mt-20">
           <span class="text-white fs-md fw-700">Playlist</span>
           <div class="icon-container">
             <i class="fa-solid fa-square-plus fs-xl create-playlist"></i>
@@ -88,9 +88,146 @@
     <nav id="top-bar">
       <button class="big-btn">EFFETTUA L'UPGRADE</button>
     </nav>
+    <div class="content">
+
+        <nav>
+          <ul>
+            <li class="flex flex-column flex-align-center row-gap-5">
+              IN EVIDENZIA
+              <div class="lightgreen-underline"></div>
+            </li>
+            <li>PODCAST</li>
+            <li>CLASSIFICHE</li>
+            <li>GENERI E MOOD</li>
+            <li>NUOVE USCITE</li>
+            <li>SCOPRI</li>
+          </ul>
+        </nav>
+
+        <!-- Recently played section -->
+        <section>
+          <h1>Recently Played</h1>
+          <div class="albums-container">
+            <div class="album-container">
+              <div class="cover-container mb-8 position-relative">
+                <img src="./img/metal_lifting.jpg" alt="Image not found">
+                <i class="fa-regular fa-circle-play play-btn"></i>
+              </div>
+              <div class="album-capture flex flex-column row-gap-5 flex-align-center">
+                <span class="album-title">Heavy Metal</span>
+                <span class="sub-title">Subtitle</span>
+              </div>
+            </div>
+            <div class="album-container">
+              <div class="cover-container mb-8 position-relative">
+                <img src="./img/stranger.jpeg" alt="Image not found">
+                <i class="fa-regular fa-circle-play play-btn"></i>
+              </div>
+              <div class="album-capture flex flex-column row-gap-5 flex-align-center">
+                <span class="album-title">Stranger Things, Vol.1(a Netflix Original Series Soundtrack)</span>
+                <span class="sub-title">Kylie Dixon & Michael Stein</span>
+              </div>
+            </div>
+            <div class="album-container">
+              <div class="cover-container mb-8 position-relative">
+                <img src="./img/aquietplace.jpeg" alt="Image not found">
+                <i class="fa-regular fa-circle-play play-btn"></i>
+              </div>
+              <div class="album-capture flex flex-column row-gap-5 flex-align-center">
+                <span class="album-title">A quiet place</span>
+                <span class="sub-title">Subtitle</span>
+              </div>
+            </div>
+            <div class="album-container">
+              <div class="cover-container mb-8 position-relative">
+                <img src="./img/split.jpeg" alt="Image not found">
+                <i class="fa-regular fa-circle-play play-btn"></i>
+              </div>
+              <div class="album-capture flex flex-column row-gap-5 flex-align-center">
+                <span class="album-title">Split</span>
+                <span class="sub-title">Subtitle</span>
+              </div>
+            </div>
+            <div class="album-container">
+              <div class="cover-container mb-8 position-relative">
+                <img src="./img/cure.jpeg" alt="Image not found">
+                <i class="fa-regular fa-circle-play play-btn"></i>
+              </div>
+              <div class="album-capture flex flex-column row-gap-5 flex-align-center">
+                <span class="album-title">A cure for wellness</span>
+                <span class="sub-title">Subtitle</span>
+              </div>
+            </div>
+            <div class="album-container">
+              <div class="cover-container mb-8 position-relative">
+                <img src="./img/sinister.jpeg" alt="Image not found">
+                <i class="fa-regular fa-circle-play play-btn"></i>
+              </div>
+              <div class="album-capture flex flex-column row-gap-5 flex-align-center">
+                <span class="album-title">Sinister</span>
+                <span class="sub-title">Subtitle</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Created for the user's section -->
+        <section>
+          <h1>Creato per Jonh Doe</h1>
+          <span class="text-gray">Più ascolti, più accurati saranno i suggerimenti</span>
+          <div class="albums-container">
+            <div class="album-container">
+              <div class="cover-container mb-8 position-relative">
+                <img src="./img/radar.jpeg" alt="Image not found">
+                <i class="fa-regular fa-circle-play play-btn"></i>
+              </div>
+              <div class="album-capture flex flex-column row-gap-5 flex-align-center">
+                <span class="album-title">Release Radar</span>
+              </div>
+            </div>
+            <div class="album-container">
+              <div class="cover-container mb-8 position-relative">
+                <img src="./img/mixdaily.jpeg" alt="Image not found">
+                <i class="fa-regular fa-circle-play play-btn"></i>
+              </div>
+              <div class="album-capture flex flex-column row-gap-5 flex-align-center">
+                <span class="album-title">Daily Mix 1</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Popular artits section -->
+        <section>
+          <h1>Artisti più popolari</h1>
+          <span class="text-gray">Più ascolti, più accurati saranno i suggerimenti</span>
+          <div class="albums-container">
+            <div class="album-container">
+              <div class="cover-container mb-8 position-relative">
+                <img class="border-round" src="./img/youg.jpeg" alt="Image not found">
+                <i class="fa-regular fa-circle-play play-btn"></i>
+              </div>
+              <div class="album-capture flex flex-column row-gap-5 flex-align-center">
+                <span class="album-title">Lana del Rey</span>
+              </div>
+            </div>
+            <div class="album-container">
+              <div class="cover-container mb-8 position-relative">
+                <img class="border-round" src="./img/einaudi.jpeg" alt="Image not found">
+                <i class="fa-regular fa-circle-play play-btn"></i>
+              </div>
+              <div class="album-capture flex flex-column row-gap-5 flex-align-center">
+                <span class="album-title">Ludovico Einaudi</span>
+              </div>
+            </div>
+          </div>
+        </section>
+    </div>
   </main>
 
   <!-- Footer -->
-  <footer></footer>
+  <footer>
+
+  </footer>
 </body>
 </html>
