@@ -7,10 +7,6 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* UNDO RIGHT
-<i class="fa-solid fa-arrow-rotate-right"></i>
-*/
-
 /* Layout */
   /* Css responsive */
     .tablet{
@@ -163,7 +159,7 @@
     border-radius: 10px;
     width: 30px;
     height: 2px;
-    background-color: rgb(173,255,45);
+    border-color: rgb(173,255,45);
   }
 
   main section{
@@ -231,11 +227,75 @@
 
 /* Footer */
 footer{
+  padding: 0 10px;
   position: fixed;
   height: 80px;
   width: 100%;
   background-color: rgb(40, 40, 40);
 }
+
+footer .container{
+  height: inherit;
+}
+
+footer .row{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .col{
+  display: flex;
+  gap: 0px 10px;
+}
+
+footer i{
+  cursor: pointer;
+}
+
+.footer-side-icons{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+} 
+
+.footer-side-icons i:hover{
+  color: white;
+}
+
+footer img{
+  width: 50px;
+}
+
+input[type="range"]{
+  -webkit-appearance: none;
+  height: 7px;
+  background: white;
+  border-radius: 5px;
+  background-size: 70% 100%;
+  background-repeat: no-repeat;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: rgb(222, 222, 222);
+  cursor: ew-resize;
+  box-shadow: 0 0 2px 0 #555;
+  transition: background .3s ease-in-out;
+}
+
+input[type=range]::-webkit-slider-runnable-track  {
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+}
+
+
 /*<----> */
 
 /* Media */
@@ -253,7 +313,7 @@ footer{
 
     /* Side Bar*/
     aside{
-      width: 140px;
+      width: 160px;
     }
 
     aside img{
@@ -345,10 +405,14 @@ footer{
 
     /* Main */
     main{
-      width: calc(100vw - 140px);
-      margin-left: 140px;
+      width: calc(100vw - 160px);
+      margin-left: 160px;
     }
     
+    /* Footer */
+    .footer-side-icons{
+      flex-direction: row;
+    }
   }
 
   /* Small Desktop */
@@ -368,6 +432,9 @@ footer{
 
 /* Utils */
   /* Display */
+  .inline-block{
+    display: inline-block;
+  }
   .flex{
     display: flex;
   }
@@ -409,6 +476,14 @@ footer{
     row-gap: 10px;
   }
 
+  .column-gap-7{
+    column-gap: 7px;
+  }
+
+  .column-gap-10{
+    column-gap: 20px;
+  }
+
   /* Sizes */
   .size-sm{
     width: 25px;
@@ -431,6 +506,10 @@ footer{
 
   .ml-18{
     margin-left: 18px;
+  }
+
+  .ml-15{
+    margin-left: 15px;
   }
 
   .mb-8{
